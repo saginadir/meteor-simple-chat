@@ -2,9 +2,7 @@
 Session.setDefault('counter', 0);
 
 Template.myChat.helpers({
-  counter: function () {
-    return Session.get('counter');
-  }
+  messages: Messages.find({})
 });
 
 Template.myChat.events({
