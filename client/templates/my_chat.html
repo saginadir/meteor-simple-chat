@@ -1,9 +1,10 @@
 <template name="myChat">
+  {{isSetUser}}
   <div class="row">
     <div class="col-xs-12">
       <ul class="chat-body">
         {{#each messages}}
-        <li>{{value}}</li>
+        <li><b style="color:#{{userColor}};">{{username}}: </b>{{value}}</li>
         {{/each}}
       </ul>
     </div>
@@ -11,10 +12,10 @@
 
   <div class="row">
     <form class="submit-new-message">
-      <div class="col-xs-8">
+      <div class="col-xs-11">
         <input type="text" name="message" placeholder="What's on your mind" class="new-message-text-input" />
       </div>
-      <div class="col-xs-4">
+      <div class="col-xs-1">
         <input type="submit" name="submit" value="Send" class="btn btn-info submit-new-message" />
       </div>
     </form>
