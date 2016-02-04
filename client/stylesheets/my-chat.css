@@ -1,1 +1,18 @@
-/* CSS declarations go here */
+.chat-body {
+    width:100%;
+    margin-top:10px;
+    min-height:400px;
+    max-height:500px;
+    border:1px solid black;
+    list-style: none;
+    padding: 10px;
+}
+
+.submit-new-message {
+    width:100%;
+}
+
+.new-message-text-input {
+    width:100%;
+    padding:5px;
+}

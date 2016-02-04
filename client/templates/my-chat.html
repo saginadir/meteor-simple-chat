@@ -1,7 +1,23 @@
 <template name="myChat">
-  <ul class="chat-body">
-  {{#each messages}}
-  <li>{{value}}</li>
-  {{/each}}
-  </ul>
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="chat-body">
+        {{#each messages}}
+        <li>{{value}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <form class="submit-new-message">
+      <div class="col-xs-8">
+        <input type="text" name="message" placeholder="What's on your mind" class="new-message-text-input" />
+      </div>
+      <div class="col-xs-4">
+        <input type="submit" name="submit" value="Send" class="btn btn-info submit-new-message" />
+      </div>
+    </form>
+  </div>
+
 </template>
